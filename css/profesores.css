@@ -162,5 +162,56 @@ main{
     background-repeat: no-repeat;    
 }
 
+.foto3{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/yunior.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto4{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto5{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto6{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/marbelis.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto7{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/alexander.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+
 
 
