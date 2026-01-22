@@ -212,6 +212,85 @@ main{
     background-repeat: no-repeat;    
 }
 
+.foto8{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto9{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/raidel.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto10{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto11{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto12{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto13{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/rolando.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto14{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/interrogante.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.foto15{
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../img/oilda.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
 
 
 
