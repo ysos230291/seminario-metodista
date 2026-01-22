@@ -236,7 +236,7 @@ main{
     border-radius: 25px;
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-image: url("../img/interrogante.jpg");
+    background-image: url("../img/merlin.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;    
@@ -291,6 +291,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;    
 }
+
 
 
 
