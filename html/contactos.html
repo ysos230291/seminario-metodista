@@ -171,7 +171,8 @@
     let profesoresData = [];
 
     function limpiarNumeroTelefono(telefono) {
-        return telefono.replace(/[\s\-\(\)\+]/g, '');
+        // Eliminar espacios, guiones y paréntesis, mantener el +
+        return telefono.replace(/[\s\-\(\)]/g, '');
     }
 
     function generarNombreImagen(nombreCompleto) {
@@ -181,6 +182,10 @@
             .replace(/\./g, "")
             .replace(/\s+/g, "_")
             + ".png";
+    }
+
+    function hacerLlamada(telefono) {
+        window.location.href = 'tel:' + telefono;
     }
 
     function renderProfesores(profesores) {
@@ -211,7 +216,7 @@
                     <p class="text-sm text-secondary mb-4">${profesor.asignatura}</p>
                     <div class="flex items-center gap-3 text-secondary group-hover:text-on-surface transition-colors mb-4">
                         <span class="material-symbols-outlined text-sm">call</span>
-                        <a href="tel:${telefonoLimpio}" class="text-sm font-['Manrope'] hover:text-primary transition-colors">${profesor.telefono}</a>
+                        <span onclick="hacerLlamada('${telefonoLimpio}')" class="text-sm font-['Manrope'] hover:text-primary transition-colors cursor-pointer">${profesor.telefono}</span>
                     </div>
                     <div class="mt-auto">
                         <a href="https://wa.me/${telefonoLimpio}" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-2.5 bg-[#25D366] text-white text-sm font-bold tracking-widest uppercase hover:bg-[#20b859] transition-colors duration-300 text-center rounded-lg">
