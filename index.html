@@ -89,128 +89,128 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/85 backdrop-blur-md shadow-sm shadow-stone-900/5 flex justify-between items-center px-8 h-20 w-full">
-<div class="flex items-center gap-4">
-<img src="img/logo.png" alt="Logo Seminario Metodista Pinar del Río" class="h-8 w-auto">
-<span class="text-2xl font-serif text-stone-900 font-['Newsreader'] italic tracking-tight">Seminario Metodista Pinar del Río</span>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-[#ae1417] border-b-2 border-[#ae1417] pb-1 font-['Manrope'] font-medium" href="#">Lobby</a>
-<a class="text-stone-600 font-medium hover:text-[#ae1417] transition-colors duration-300 font-['Manrope']" href="html/biblioteca.html">Biblioteca</a>
-<a class="text-stone-600 font-medium hover:text-[#ae1417] transition-colors duration-300 font-['Manrope']" href="html/contactos.html">Profesores</a>
-<button class="ml-4 scale-95 duration-200" onclick="location.reload(true)">
-<span class="material-symbols-outlined text-stone-600" data-icon="refresh">refresh</span>
-</button>
-</div>
+<!-- TopAppBar - Móvil: solo logo circular a la izquierda y refresh a la derecha -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/85 backdrop-blur-md shadow-sm shadow-stone-900/5 flex justify-between items-center px-4 h-20">
+    <div class="flex items-center">
+        <img src="img/logo.png" alt="Logo Seminario Metodista" class="h-12 w-12 rounded-full object-cover shadow-md">
+    </div>
+    <div class="flex items-center gap-2">
+        <button class="scale-95 duration-200 active:scale-90" onclick="location.reload(true)">
+            <span class="material-symbols-outlined text-stone-600 text-2xl">refresh</span>
+        </button>
+    </div>
 </nav>
-<!-- Main Content Canvas -->
+
+<!-- Main Content Canvas - Todo centrado -->
 <main class="pt-20 pb-24 md:pb-0">
-<!-- Hero Section -->
-<section class="relative min-h-[795px] flex items-center px-8 md:px-20 overflow-hidden bg-surface-bright">
-<div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-<div class="md:col-span-6 z-10">
-<h1 class="text-5xl md:text-7xl font-serif italic text-on-surface leading-tight mb-6">
-                        Cultivando Corazones, <br/> <span class="text-primary">Iluminando Mentes.</span>
-</h1>
-<p class="text-lg md:text-xl text-secondary max-w-lg mb-10 leading-relaxed">
-                        “Adquiere sabiduría, adquiere inteligencia; No te olvides ni te apartes de las razones de mi boca;”
-                        <br>
-                        (Proverbios 4.5, RVR60)
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-medium shadow-md transition-transform hover:scale-105" href="html/biblioteca.html">
-                            Biblioteca
-                        </a>
-<a class="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-medium transition-colors hover:bg-surface-container-low" href="#">
-                            Profesores
-                        </a>
-</div>
-</div>
-<div class="md:col-span-6 relative mt-12 md:mt-0">
-<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 bg-surface-container-high">
-<img alt="Biblioteca del Seminario" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000" data-alt="Primer plano de libros teológicos antiguos encuadernados en cuero en un estante de madera oscura en una biblioteca histórica iluminada por el sol con motas de polvo suaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO9R5geaGkjN7q1jOQDEeDgFVSzrdUsllNtANGjuKub-sNGB8vQIIAuvIp5pV4gM3pCMtcaWfugHiBe1Xsm4WY6-lcPPnHPkINo0F_riQxyMKNa5pZZqeCbkczcP-BT2WsZ3es4KS4Is29UQHHK_8hDwcpZHpQVL859cvFlyeamG6afXzv5sKz1baLE_dkCfOZosAcYY7VOpdvT1S8rFt6jWq1o2047tlrqEEd-sUzG8_ktUOEcW6acLxr9J5GRXrkWB0RIeScXPfj"/>
-</div>
-<!-- Decorative Element -->
-<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
-</div>
-</div>
-</section>
-<!-- Mission, Vision, Values -->
-<section class="py-24 px-8 md:px-20 bg-surface-container-low">
-<div class="container mx-auto">
-<div class="text-center mb-20">
-<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block font-['Manrope']">Nuestro Fundamento</span>
-<h2 class="text-4xl md:text-5xl font-serif italic text-on-surface">Los Pilares de Nuestra Fe</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Mission -->
-<div class="bg-surface-container-lowest p-12 rounded-[2rem] transition-colors duration-300 hover:bg-primary-fixed group">
-<div class="w-16 h-16 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="auto_stories">auto_stories</span>
-</div>
-<h3 class="text-2xl font-serif mb-4">Misión</h3>
-<p class="text-secondary leading-relaxed group-hover:text-on-surface-variant transition-colors">
-                            Preparar líderes apasionados para un servicio transformador en la iglesia y el mundo a través de la formación académica rigurosa y la práctica espiritual comunitaria.
-                        </p>
-</div>
-<!-- Vision -->
-<div class="bg-surface-container-lowest p-12 rounded-[2rem] transition-colors duration-300 hover:bg-tertiary-fixed group">
-<div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="visibility">visibility</span>
-</div>
-<h3 class="text-2xl font-serif mb-4">Visión</h3>
-<p class="text-secondary leading-relaxed group-hover:text-on-tertiary-fixed-variant transition-colors">
-                            Ser un faro del pensamiento wesleyano, fomentando una comunidad global de creyentes que integren la profundidad teológica con una santidad social activa.
-                        </p>
-</div>
-<!-- Values -->
-<div class="bg-surface-container-lowest p-12 rounded-[2rem] transition-colors duration-300 hover:bg-surface-container-highest group">
-<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="favorite">favorite</span>
-</div>
-<h3 class="text-2xl font-serif mb-4">Valores</h3>
-<p class="text-secondary leading-relaxed transition-colors">
-                            Arraigados en las Escrituras, la Tradición, la Razón y la Experiencia. Valoramos la integridad, la hospitalidad, la humildad intelectual y el servicio a los marginados.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Quote Section -->
-<section class="py-32 px-8 md:px-20 text-center bg-surface">
-<div class="max-w-4xl mx-auto">
-<span class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-8" data-icon="format_quote">format_quote</span>
-<p class="text-3xl md:text-5xl font-serif italic text-on-surface leading-snug">
-                    "Haced todo el bien que podáis, por todos los medios que podáis, de todas las maneras que podáis, en todos los lugares que podáis, en todo tiempo que podáis."
+    <!-- Hero Section -->
+    <section class="relative min-h-[795px] flex items-center px-6 md:px-20 overflow-hidden bg-surface-bright">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-7xl font-serif italic text-on-surface leading-tight mb-6">
+                    Cultivando Corazones, <br/> <span class="text-primary">Iluminando Mentes.</span>
+                </h1>
+                <p class="text-base md:text-xl text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
+                    "Adquiere sabiduría, adquiere inteligencia; No te olvides ni te apartes de las razones de mi boca;"
+                    <br>
+                    (Proverbios 4.5, RVR60)
                 </p>
-<cite class="block mt-8 text-secondary font-['Manrope'] tracking-widest uppercase text-sm">— John Wesley</cite>
-</div>
-</section>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-medium shadow-md transition-transform hover:scale-105" href="html/biblioteca.html">
+                        Biblioteca
+                    </a>
+                    <a class="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-medium transition-colors hover:bg-surface-container-low" href="html/contactos.html">
+                        Profesores
+                    </a>
+                </div>
+            </div>
+            <!-- Imagen decorativa centrada -->
+            <div class="mt-16 max-w-2xl mx-auto">
+                <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl bg-surface-container-high">
+                    <img alt="Biblioteca del Seminario" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO9R5geaGkjN7q1jOQDEeDgFVSzrdUsllNtANGjuKub-sNGB8vQIIAuvIp5pV4gM3pCMtcaWfugHiBe1Xsm4WY6-lcPPnHPkINo0F_riQxyMKNa5pZZqeCbkczcP-BT2WsZ3es4KS4Is29UQHHK_8hDwcpZHpQVL859cvFlyeamG6afXzv5sKz1baLE_dkCfOZosAcYY7VOpdvT1S8rFt6jWq1o2047tlrqEEd-sUzG8_ktUOEcW6acLxr9J5GRXrkWB0RIeScXPfj"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="py-24 px-6 md:px-20 bg-surface-container-low">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-20">
+                <span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Nuestro Fundamento</span>
+                <h2 class="text-4xl md:text-5xl font-serif italic text-on-surface">Los Pilares de Nuestra Fe</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] transition-colors duration-300 hover:bg-primary-fixed group text-center">
+                    <div class="w-16 h-16 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-white transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">auto_stories</span>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Misión</h3>
+                    <p class="text-secondary leading-relaxed group-hover:text-on-surface-variant transition-colors">
+                        Preparar líderes apasionados para un servicio transformador en la iglesia y el mundo a través de la formación académica rigurosa y la práctica espiritual comunitaria.
+                    </p>
+                </div>
+                <!-- Vision -->
+                <div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] transition-colors duration-300 hover:bg-tertiary-fixed group text-center">
+                    <div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-white transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Visión</h3>
+                    <p class="text-secondary leading-relaxed group-hover:text-on-tertiary-fixed-variant transition-colors">
+                        Ser un faro del pensamiento wesleyano, fomentando una comunidad global de creyentes que integren la profundidad teológica con una santidad social activa.
+                    </p>
+                </div>
+                <!-- Values -->
+                <div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] transition-colors duration-300 hover:bg-surface-container-highest group text-center">
+                    <div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-white transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4">Valores</h3>
+                    <p class="text-secondary leading-relaxed transition-colors">
+                        Arraigados en las Escrituras, la Tradición, la Razón y la Experiencia. Valoramos la integridad, la hospitalidad, la humildad intelectual y el servicio a los marginados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="py-32 px-6 md:px-20 text-center bg-surface">
+        <div class="max-w-4xl mx-auto">
+            <span class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-8">format_quote</span>
+            <p class="text-2xl md:text-5xl font-serif italic text-on-surface leading-snug">
+                "Haced todo el bien que podáis, por todos los medios que podáis, de todas las maneras que podáis, en todos los lugares que podáis, en todo tiempo que podáis."
+            </p>
+            <cite class="block mt-8 text-secondary font-['Manrope'] tracking-widest uppercase text-sm">— John Wesley</cite>
+        </div>
+    </section>
 </main>
+
 <!-- Footer -->
-<footer class="bg-stone-100 py-12 flex flex-col md:flex-row justify-between items-center px-12 gap-8 w-full">
-<div class="flex flex-col gap-2 items-center md:items-start">
-<span class="font-serif text-lg text-stone-800 font-bold">Seminario Metodista Pinar del Río</span>
-<p class="font-['Manrope'] text-sm text-stone-500">© 2024 Seminario Metodista Pinar del Río. Todos los derechos reservados.</p>
-</div>
-<div class="flex gap-8">
-<a class="text-stone-500 hover:underline decoration-[#ae1417] underline-offset-4 font-['Manrope'] text-sm" href="#">Contactar Facultad</a>
-</div>
+<footer class="bg-stone-100 py-12 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 gap-8">
+    <div class="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
+        <span class="font-serif text-lg text-stone-800 font-bold">Seminario Metodista Pinar del Río</span>
+        <p class="font-['Manrope'] text-sm text-stone-500">© 2024 Seminario Metodista Pinar del Río. Todos los derechos reservados.</p>
+    </div>
+    <div class="flex gap-8">
+        <a class="text-stone-500 hover:underline decoration-[#ae1417] underline-offset-4 font-['Manrope'] text-sm" href="html/contactos.html">Contactar Facultad</a>
+    </div>
 </footer>
+
 <!-- BottomNavBar (Mobile Only) -->
 <nav class="md:hidden fixed bottom-0 w-full rounded-t-2xl z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)] flex justify-around items-center pt-3 pb-6 px-4">
-<a class="flex flex-col items-center text-[#ae1417] font-bold tap-highlight-transparent active:scale-90" href="#">
-<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
-<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Lobby</span>
-</a>
-<a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="html/biblioteca.html">
-<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
-<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Biblioteca</span>
-</a>
-<a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="html/contactos.html">
-<span class="material-symbols-outlined" data-icon="group">group</span>
-<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Profesores</span>
-</a>
+    <a class="flex flex-col items-center text-[#ae1417] font-bold tap-highlight-transparent active:scale-90" href="#">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Lobby</span>
+    </a>
+    <a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="html/biblioteca.html">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Biblioteca</span>
+    </a>
+    <a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="html/contactos.html">
+        <span class="material-symbols-outlined">group</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Profesores</span>
+    </a>
 </nav>
 </body></html>
