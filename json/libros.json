@@ -1,0 +1,178 @@
+{
+  "libros": [
+    {
+      "imagen": "",
+      "titulo": "Liderazgo Que Hace La Diferencia Español Final",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/Liderazgo_Que_Hace_La_Diferencia_Español_Final.pdf"
+    },
+    {
+      "imagen": "",
+      "titulo": "Actitud de Vencedor",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/Actitud de Vencedor.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "CLASES DE Liderazgo",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/CLASES DE Liderazgo.OK..doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "La ética del compromiso comunitario",
+      "asignatura": "Filosofía",
+      "archivo": "#"
+    },
+    {
+      "imagen": "",
+      "titulo": "Desarrolle los Lídres que estan Alrededor de Usted.doc",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/desarrole los lidres que estan alrededor de usted.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "EL MAPA para alcanzar el exito",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/EL MAPA para alcanzar el exito.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "El Poder de una Alianza en la Iglesia.doc",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/El Poder de una Alianza en la Iglesia.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "LaS 21 Leyes Irrefutables del liderazgo",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/LaS 21 Leyes Irrefutables del liderazgo xxxxxxxxx.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "LIDERAZGO 101",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/LIDERAZGO 101 xxxx.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Los 21 Minutos más Poderosos en la Vida de un Lider",
+      "asignatura": "Liderazgo",
+      "archivo": "../books/Los 21 Minutos más Poderosos en la Vida de un Lider xxxxxxx.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "DISCIPLINA_IMECU 2023",
+      "asignatura": "Disciplina",
+      "archivo": "../books/DISCIPLINA_IMECU 2023.pdf"
+    },
+    {
+      "imagen": "",
+      "titulo": "Folleto Historia de la Iglesia",
+      "asignatura": "Historia de la Iglesia",
+      "archivo": "../books/Folleto Historia de la Iglesia.docx"
+    },
+    {
+      "imagen": "",
+      "titulo": "HOMILÉTICA",
+      "asignatura": "Homiletica",
+      "archivo": "../books/HOMILÉTICA.docx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clases de Iglecrecmiento",
+      "asignatura": "Iglecrecmiento",
+      "archivo": "../books/Clases de Iglecrecmiento.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clase 1. Idioma Inglés",
+      "asignatura": "Ingles",
+      "archivo": "../books/01. Clase 1. Idioma Inglés.pptx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clase 2. Idioma Inglés",
+      "asignatura": "Ingles",
+      "archivo": "../books/02. Clase 2. Idioma Inglés.pptx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clase 3. Idioma Inglés",
+      "asignatura": "Ingles",
+      "archivo": "../books/03. Clase 3. Idioma Inglés.pptx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clase 4. Idioma Inglés.pptx",
+      "asignatura": "Ingles",
+      "archivo": "../books/04. Clase 4. Idioma Inglés.pptx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Clase 5. Idioma Inglés",
+      "asignatura": "Ingles",
+      "archivo": "../books/05. Clase 5. Idioma Inglés.pptx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Introducción a la Biblia",
+      "asignatura": "Introducción a la Biblia",
+      "archivo": "../books/Int. a la Biblia.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Los Libros del AT y NT",
+      "asignatura": "Introducción a la Biblia",
+      "archivo": "../books/Los Libros del AT y NT.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Introducció Teología",
+      "asignatura": "Introducció Teología",
+      "archivo": "../books/INTRODUCCIÓN TEOLOGÍA.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Folleto Liturgia",
+      "asignatura": "Liturgia",
+      "archivo": "../books/Folleto Liturgia.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Metodismo 1-Folleto-Wesley, Historia",
+      "asignatura": "Metodismo",
+      "archivo": "../books/Metodismo 1-Folleto-Wesley, Historia.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Metodismo 2-Wesley, Doctrina",
+      "asignatura": "Metodismo",
+      "archivo": "../books/Metodismo 2-Wesley, Doctrina.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Método de Estudio Bíblico",
+      "asignatura": "Método de Estudio",
+      "archivo": "../books/Método de Estudio Bíblico.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "CLASES-Música",
+      "asignatura": "Música",
+      "archivo": "../books/CLASES-Música.doc"
+    },
+    {
+      "imagen": "",
+      "titulo": "Curso de Redacción",
+      "asignatura": "Redacción",
+      "archivo": "../books/CURSO DE REDACCIÓN.docx"
+    },
+    {
+      "imagen": "",
+      "titulo": "Técnicas de Estudio",
+      "asignatura": "Técnicas de Estudio",
+      "archivo": "../books/Tecnicas de Estudios.docx"
+    }
+  ]
+}

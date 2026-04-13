@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" type="image/png" href="../img/logo.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#5b403d",
+                    "surface-container-high": "#eae8e4",
+                    "inverse-surface": "#30312e",
+                    "on-secondary-container": "#5f6161",
+                    "primary": "#ae1417",
+                    "surface-tint": "#b91d1d",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-fixed-variant": "#454747",
+                    "tertiary": "#3b5a76",
+                    "on-primary-fixed-variant": "#93000b",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#5d5f5f",
+                    "on-primary-fixed": "#410002",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "surface-container-highest": "#e4e2de",
+                    "tertiary-fixed-dim": "#aacaea",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#dcdddd",
+                    "primary-container": "#d2312c",
+                    "surface": "#fbf9f5",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f5f3ef",
+                    "on-tertiary-container": "#eff5ff",
+                    "on-background": "#1b1c1a",
+                    "surface-variant": "#e4e2de",
+                    "background": "#fbf9f5",
+                    "inverse-primary": "#ffb4ab",
+                    "outline": "#8f6f6c",
+                    "surface-container": "#efeeea",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#cde5ff",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#e2e2e2",
+                    "on-primary-container": "#fff2f0",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "outline-variant": "#e4beba",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-tertiary-fixed": "#001d32",
+                    "on-tertiary-fixed-variant": "#294964",
+                    "surface-dim": "#dbdad6",
+                    "tertiary-container": "#547390",
+                    "primary-fixed-dim": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-display { font-family: 'Newsreader', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed-variant">
+<!-- TopAppBar - igual que biblioteca.html -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f5]/85 dark:bg-stone-950/85 backdrop-blur-md shadow-sm shadow-stone-900/5">
+<div class="flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-4">
+<img src="../img/logo.png" alt="Logo Seminario Metodista Pinar del Río" class="h-8 w-auto">
+<h1 class="font-['Newsreader'] italic tracking-tight text-2xl font-serif text-stone-900 dark:text-stone-100">Seminario Metodista Pinar del Río</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#ae1417] transition-colors duration-300" href="../index.html">Lobby</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#ae1417] transition-colors duration-300" href="biblioteca.html">Biblioteca</a>
+<a class="text-[#ae1417] border-b-2 border-[#ae1417] pb-1 font-medium" href="contactos.html">Profesores</a>
+<button class="ml-4 scale-95 duration-200" onclick="location.reload(true)">
+<span class="material-symbols-outlined text-stone-600" data-icon="refresh">refresh</span>
+</button>
+</nav>
+<div class="flex items-center gap-4 md:hidden">
+<span class="material-symbols-outlined text-stone-600 dark:text-stone-400 cursor-pointer hover:text-[#ae1417] transition-all" data-icon="search">search</span>
+<span class="material-symbols-outlined text-stone-600 dark:text-stone-400 cursor-pointer hover:text-[#ae1417] transition-all" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section: Editorial Style -->
+<section class="mb-24 flex flex-col md:flex-row items-center gap-12 md:gap-24">
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-4 block">Cuerpo Docente Distinguido</span>
+<h2 class="serif-display text-5xl md:text-7xl font-light italic leading-tight text-on-surface mb-6">Las Mentes que Guían el Espíritu</h2>
+<p class="text-lg text-secondary leading-relaxed max-w-md">Nuestra facultad representa una fusión de rigurosa excelencia académica y profunda devoción espiritual, comprometida con la tradición metodista de vida y aprendizaje en santidad.</p>
+</div>
+<div class="w-full md:w-1/2 relative h-96 md:h-[500px]">
+<div class="absolute inset-0 bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<img alt="Búsqueda intelectual" class="w-full h-full object-cover rounded-xl shadow-sm grayscale opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1PiBa3t4IcAWTx8YwlMdrr3slcpHvsIDIStZtIYuW6S-JJFvtgPrA0ydLdA-SIK9o6igiIPzTYTs0z_Dej4V1Nv56u3PaWFJrd73a5RhVbVY2oATfK8jY-kT7pJalS7fH4_7OE4LhgzpJyCXwML6I34bbKdpqyd3DjpeyonTa46zaHbx5CBCU9WqIr0erFE4Gwl6jKYduSH7NwV8nREgjGAjojorZMY4xM9Wr7qkxlMJaO9nOCsFTdBd6eals9x9u5wjs4T6wet1z"/>
+</div>
+</section>
+
+<!-- Faculty Grid Dinámico -->
+<div id="profesoresGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Las tarjetas se generarán dinámicamente desde JSON -->
+</div>
+
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-2xl z-50 bg-[#fbf9f5]/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)] pt-3 pb-6 px-4 flex justify-around items-center">
+<a class="flex flex-col items-center text-stone-400 dark:text-stone-500 transition-transform active:scale-90" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Inicio</span>
+</a>
+<a class="flex flex-col items-center text-stone-400 dark:text-stone-500 transition-transform active:scale-90" href="biblioteca.html">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Biblioteca</span>
+</a>
+<a class="flex flex-col items-center text-[#ae1417] dark:text-[#ffdad6] font-bold transition-transform active:scale-90" href="contactos.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Docentes</span>
+</a>
+</nav>
+<!-- Footer - igual que biblioteca.html -->
+<footer class="bg-stone-100 py-12 flex flex-col md:flex-row justify-between items-center px-12 gap-8 w-full">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<span class="font-serif text-lg text-stone-800 font-bold">Seminario Metodista Pinar del Río</span>
+<p class="font-['Manrope'] text-sm text-stone-500">© 2024 Seminario Metodista Pinar del Río. Todos los derechos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:underline decoration-[#ae1417] underline-offset-4 font-['Manrope'] text-sm" href="#">Contactar Facultad</a>
+</div>
+</footer>
+
+<script>
+    let profesoresData = [];
+
+    function limpiarNumeroTelefono(telefono) {
+        return telefono.replace(/[\s\-\(\)\+]/g, '');
+    }
+
+    function generarNombreImagen(nombreCompleto) {
+        return nombreCompleto
+            .toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/\./g, "")
+            .replace(/\s+/g, "_")
+            + ".png";
+    }
+
+    function renderProfesores(profesores) {
+        const grid = document.getElementById('profesoresGrid');
+        if (!grid) return;
+
+        if (profesores.length === 0) {
+            grid.innerHTML = '<div class="col-span-full text-center py-20 text-secondary text-lg">No se encontraron profesores.</div>';
+            return;
+        }
+
+        grid.innerHTML = profesores.map(profesor => {
+            const telefonoLimpio = limpiarNumeroTelefono(profesor.telefono);
+            const nombreImagen = generarNombreImagen(profesor.nombre);
+            const rutaImagen = `../img/${nombreImagen}`;
+            return `
+            <div class="group bg-surface-container-lowest transition-all duration-500 hover:translate-y-[-4px] p-2 relative">
+                <div class="relative overflow-hidden aspect-[4/5] mb-6">
+                    <img alt="Retrato de ${profesor.nombre}" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                         src="${rutaImagen}"
+                         onerror="this.src='../img/incognito.png'">
+                    <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="px-4 pb-6">
+                    <span class="text-xs tracking-widest text-primary font-bold uppercase mb-2 block">${profesor.cargo}</span>
+                    <h3 class="serif-display text-2xl font-medium mb-2 group-hover:text-primary transition-colors">${profesor.nombre}</h3>
+                    <p class="text-sm text-secondary mb-4">${profesor.asignatura}</p>
+                    <div class="flex items-center gap-3 text-secondary group-hover:text-on-surface transition-colors">
+                        <span class="material-symbols-outlined text-sm">call</span>
+                        <a href="tel:${telefonoLimpio}" class="text-sm font-['Manrope'] hover:text-primary transition-colors">${profesor.telefono}</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/${telefonoLimpio}" target="_blank" class="absolute bottom-6 right-6 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:scale-110 w-12 h-12">
+                    <img src="../img/whatsap.png" alt="WhatsApp" class="w-full h-full object-cover">
+                </a>
+            </div>
+        `;
+        }).join('');
+    }
+
+    function loadProfesores() {
+        fetch('../json/profesores.json')
+            .then(response => response.json())
+            .then(data => {
+                profesoresData = data.profesores || data;
+                renderProfesores(profesoresData);
+            })
+            .catch(error => {
+                console.error('Error cargando profesores:', error);
+                document.getElementById('profesoresGrid').innerHTML = '<div class="col-span-full text-center py-20 text-error">Error al cargar los profesores. Por favor, intente más tarde.</div>';
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadProfesores();
+    });
+</script>
+</body></html>
