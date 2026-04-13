@@ -5,105 +5,105 @@
       "nombre": "Rev. Norberto Pedrero Carter",
       "cargo": "Decano de Facultad y Profesor Titular",
       "asignatura": "Iglecrecimiento (Misión y Evangelismo)",
-      "telefono": "+53 5 4271745"
+      "telefono": "+5354271745"
     },
     {
       "id": 2,
       "nombre": "Lic. Odalys Magdalena de la Cruz de la Cruz",
       "cargo": "Profesora Titular",
       "asignatura": "-",
-      "telefono": "+53 56916599"
+      "telefono": "+5356916599"
     },
     {
       "id": 3,
       "nombre": "Pastor Yunior González Ávila",
       "cargo": "Profesor Titular",
       "asignatura": "Dinámica de la Estructura de la IMECU",
-      "telefono": "+53 53014641"
+      "telefono": "+5353014641"
     },
     {
       "id": 4,
       "nombre": "Rev. Eduardo Murga Sánchez",
       "cargo": "Profesor Titular",
       "asignatura": "Metodismo I, Metodismo II",
-      "telefono": "+53 5 3391066"
+      "telefono": "+5353391066"
     },
     {
       "id": 5,
       "nombre": "Rev. Joel Cariñao Sánchez",
       "cargo": "Profesor Titular",
       "asignatura": "Liderazgo Cristiano",
-      "telefono": "+53 5 3154767"
+      "telefono": "+5353154767"
     },
     {
       "id": 6,
       "nombre": "Rev. Marbelis Pavón Suarez",
       "cargo": "Profesor Titular",
       "asignatura": "Introduccion a la Biblia",
-      "telefono": "+53 53055796"
+      "telefono": "+5353055796"
     },
     {
       "id": 7,
       "nombre": "Pastor Alexander Menéndez Arencibia",
       "cargo": "Profesor Titular",
       "asignatura": "La Música en la Tradición Cristiana",
-      "telefono": "+53 5 6679765"
+      "telefono": "+5356679765"
     },
     {
       "id": 8,
       "nombre": "Lic. Annia Margarita Vigoa Valdés",
       "cargo": "Secretaria Seminario y Profesor Titular",
       "asignatura": "Introducción a la Teología",
-      "telefono": "+53 5 5291529"
+      "telefono": "+5355291529"
     },
     {
       "id": 9,
       "nombre": "Rev. Raidel Romero Barral",
       "cargo": "Profesor Titular",
       "asignatura": "Historia Universal",
-      "telefono": "+53 5 4969062"
+      "telefono": "+5354969062"
     },
     {
       "id": 10,
       "nombre": "Lic. Merlín de los Milagros Rodríguez Montero",
       "cargo": "Profesor Titular",
       "asignatura": "Computación",
-      "telefono": "+53 5 1867485"
+      "telefono": "+5351867485"
     },
     {
       "id": 11,
       "nombre": "Madelyn de la Cruz de la Cruz",
       "cargo": "Profesor Titular",
       "asignatura": "Ministerio Educativo de la Iglesia I",
-      "telefono": "+53 5 4881437"
+      "telefono": "+5354881437"
     },
     {
       "id": 12,
       "nombre": "Rev. Rolando Antonio Delgado Pupo",
       "cargo": "Profesor Titular",
       "asignatura": "Historia de la Iglesia I",
-      "telefono": "+53 5 3029796"
+      "telefono": "+5353029796"
     },
     {
       "id": 13,
       "nombre": "Rafael González Pérez",
       "cargo": "Profesor Titular",
       "asignatura": "Introducción a la Psicología",
-      "telefono": "+53 5 4604363"
+      "telefono": "+5354604363"
     },
     {
       "id": 14,
       "nombre": "Lic. Oilda Yaimara Ugalde Martí",
       "cargo": "Profesor Titular",
       "asignatura": "Liturgia",
-      "telefono": "+53 5 3466869"
+      "telefono": "+5353466869"
     },
     {
       "id": 15,
       "nombre": "Rev. Wilmar Yordani Jiménez Breffe",
       "cargo": "Profesor Titular",
       "asignatura": "Método de Estudio Bíblico, Homilética",
-      "telefono": "+53 52513153"
+      "telefono": "+5352513153"
     }
   ]
 }
