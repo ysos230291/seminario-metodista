@@ -95,7 +95,7 @@
         <img src="img/logo.png" alt="Logo Seminario Metodista" class="h-12 w-12 rounded-full object-cover shadow-md">
     </div>
     <div class="flex items-center gap-2">
-        <button class="scale-95 duration-200 active:scale-90" onclick="location.reload(true)">
+        <button id="refreshBtn" class="scale-95 duration-200 active:scale-90">
             <span class="material-symbols-outlined text-stone-600 text-2xl">refresh</span>
         </button>
     </div>
@@ -213,4 +213,42 @@
         <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Profesores</span>
     </a>
 </nav>
+
+<script>
+    // Función para forzar recarga completa y limpiar caché
+    function hardRefresh() {
+        // 1. Limpiar localStorage
+        try {
+            localStorage.clear();
+            console.log('localStorage limpiado');
+        } catch(e) { console.error('Error limpiando localStorage:', e); }
+        
+        // 2. Limpiar sessionStorage
+        try {
+            sessionStorage.clear();
+            console.log('sessionStorage limpiado');
+        } catch(e) { console.error('Error limpiando sessionStorage:', e); }
+        
+        // 3. Limpiar caché de Cache API si está disponible
+        if ('caches' in window) {
+            caches.keys().then(function(names) {
+                for (let name of names) {
+                    caches.delete(name);
+                    console.log('Cache eliminado:', name);
+                }
+            }).catch(function(e) { console.error('Error limpiando cache:', e); });
+        }
+        
+        // 4. Forzar recarga desde el servidor (sin caché)
+        // Añadir timestamp para evitar cualquier caché
+        const url = new URL(window.location.href);
+        url.searchParams.set('_t', Date.now());
+        
+        // Usar location.replace para evitar que la página anterior quede en el historial
+        window.location.replace(url.href);
+    }
+    
+    // Asignar la función al botón de refresh
+    document.getElementById('refreshBtn').addEventListener('click', hardRefresh);
+</script>
 </body></html>
