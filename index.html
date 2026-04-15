@@ -3,6 +3,13 @@
 <html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- META TAGS PARA FORZAR NO CACHÉ EN WEBVIEW -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, private">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<!-- Fin meta tags anti-caché -->
 <title>Seminario Metodista Pinar del Río - Lobby</title>
 <link rel="icon" type="image/png" href="img/logo.png">
 <!-- Google Fonts: Newsreader & Manrope -->
@@ -120,7 +127,7 @@
                         Biblioteca
                     </a>
                     <a class="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-medium transition-colors hover:bg-surface-container-low" href="html/contactos.html">
-                        Cantantes
+                        Profesores
                     </a>
                 </div>
             </div>
@@ -215,40 +222,59 @@
 </nav>
 
 <script>
-    // Función para forzar recarga completa y limpiar caché
+    // Función SUPER agresiva para forzar recarga completa
     function hardRefresh() {
         // 1. Limpiar localStorage
         try {
             localStorage.clear();
-            console.log('localStorage limpiado');
-        } catch(e) { console.error('Error limpiando localStorage:', e); }
-        
-        // 2. Limpiar sessionStorage
-        try {
             sessionStorage.clear();
-            console.log('sessionStorage limpiado');
-        } catch(e) { console.error('Error limpiando sessionStorage:', e); }
+            console.log('Storages limpiados');
+        } catch(e) { console.error(e); }
         
-        // 3. Limpiar caché de Cache API si está disponible
+        // 2. Limpiar todas las cachés posibles
         if ('caches' in window) {
             caches.keys().then(function(names) {
                 for (let name of names) {
                     caches.delete(name);
-                    console.log('Cache eliminado:', name);
                 }
-            }).catch(function(e) { console.error('Error limpiando cache:', e); });
+            });
         }
         
-        // 4. Forzar recarga desde el servidor (sin caché)
-        // Añadir timestamp para evitar cualquier caché
-        const url = new URL(window.location.href);
-        url.searchParams.set('_t', Date.now());
+        // 3. Limpiar caché de imágenes y recursos (si existe)
+        if ('webkit' in window && 'browser' in window.webkit) {
+            // Para WebView en iOS
+            try {
+                window.webkit.messageHandlers.clearCache.postMessage({});
+            } catch(e) {}
+        }
         
-        // Usar location.replace para evitar que la página anterior quede en el historial
-        window.location.replace(url.href);
+        // 4. FORZAR RECARGA COMPLETA IGNORANDO CACHÉ
+        // Método 1: location.reload con true (solo funciona en algunos navegadores)
+        // Método 2: Añadir timestamp y usar replace
+        
+        const baseUrl = window.location.href.split('?')[0].split('#')[0];
+        const timestamp = Date.now();
+        const newUrl = baseUrl + '?v=' + timestamp;
+        
+        // Usar replace para no guardar en historial
+        window.location.replace(newUrl);
     }
     
-    // Asignar la función al botón de refresh
-    document.getElementById('refreshBtn').addEventListener('click', hardRefresh);
+    // Asignar la función al botón
+    const btn = document.getElementById('refreshBtn');
+    if (btn) {
+        btn.addEventListener('click', hardRefresh);
+    }
+    
+    // DETECTAR si la página se está sirviendo desde caché y forzar recarga
+    // Esto revisa si la URL tiene timestamp, si no lo tiene, recarga
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (!urlParams.has('v') && !urlParams.has('_t')) {
+            // No hay timestamp, forzar recarga limpia
+            const cleanUrl = window.location.href.split('?')[0].split('#')[0];
+            window.location.replace(cleanUrl + '?v=' + Date.now());
+        }
+    })();
 </script>
 </body></html>
