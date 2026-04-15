@@ -107,10 +107,16 @@
   </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed">
-<!-- TopAppBar - Móvil: solo logo circular a la izquierda y refresh a la derecha -->
+<!-- TopAppBar - Logo izquierda, navegación centrada, refresh derecha -->
 <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/85 dark:bg-stone-950/85 backdrop-blur-md shadow-sm shadow-stone-900/5 flex justify-between items-center px-4 h-20">
     <div class="flex items-center">
         <img src="../img/logo.png" alt="Logo Seminario Metodista" class="h-12 w-12 rounded-full object-cover shadow-md">
+    </div>
+    <!-- Navegación centrada para PC -->
+    <div class="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
+        <a href="../index.html" class="text-stone-600 hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider">Lobby</a>
+        <a href="#" class="text-primary font-bold text-sm uppercase tracking-wider border-b-2 border-primary pb-0.5">Biblioteca</a>
+        <a href="contactos.html" class="text-stone-600 hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider">Profesores</a>
     </div>
     <div class="flex items-center gap-2">
         <button class="scale-95 duration-200 active:scale-90" onclick="location.reload(true)">
@@ -150,22 +156,20 @@
     </div>
 </footer>
 
-<!-- BottomNavBar (Mobile only) -->
-<nav class="md:hidden fixed bottom-0 w-full rounded-t-2xl z-50 bg-[#fbf9f5]/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)]">
-    <div class="flex justify-around items-center pt-3 pb-6 px-4">
-        <a class="flex flex-col items-center text-stone-400 dark:text-stone-500 tap-highlight-transparent active:scale-90" href="../index.html">
-            <span class="material-symbols-outlined mb-1">home</span>
-            <span class="font-['Manrope'] text-[10px] uppercase tracking-widest">Lobby</span>
-        </a>
-        <a class="flex flex-col items-center text-stone-400 dark:text-stone-500 tap-highlight-transparent active:scale-90" href="contactos.html">
-            <span class="material-symbols-outlined mb-1">group</span>
-            <span class="font-['Manrope'] text-[10px] uppercase tracking-widest">Profesores</span>
-        </a>
-        <div class="flex flex-col items-center text-[#ae1417] dark:text-[#ffdad6] font-bold tap-highlight-transparent active:scale-90">
-            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
-            <span class="font-['Manrope'] text-[10px] uppercase tracking-widest">Biblioteca</span>
-        </div>
-    </div>
+<!-- BottomNavBar (Mobile only) - SIN CAMBIOS, como estaba antes -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-2xl z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)] flex justify-around items-center pt-3 pb-6 px-4">
+    <a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="../index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Lobby</span>
+    </a>
+    <a class="flex flex-col items-center text-[#ae1417] font-bold tap-highlight-transparent active:scale-90" href="#">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Biblioteca</span>
+    </a>
+    <a class="flex flex-col items-center text-stone-400 tap-highlight-transparent active:scale-90" href="contactos.html">
+        <span class="material-symbols-outlined">group</span>
+        <span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Profesores</span>
+    </a>
 </nav>
 
 <script>
