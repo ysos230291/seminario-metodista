@@ -4,14 +4,14 @@
       "id": 1,
       "nombre": "Rev. Norberto Pedrero Carter",
       "cargo": "Decano de Facultad y Profesor Titular",
-      "asignatura": "Iglecrecimiento (Misión y Evangelismo)",
+      "asignatura": "Iglecrecimiento y Liderazgo",
       "telefono": "+53 5 4271745"
     },
     {
       "id": 2,
       "nombre": "Lic. Odalys Magdalena de la Cruz de la Cruz",
       "cargo": "Profesora Titular",
-      "asignatura": "-",
+      "asignatura": "Redacción",
       "telefono": "+53 56916599"
     },
     {
@@ -27,24 +27,17 @@
       "cargo": "Profesor Titular",
       "asignatura": "Metodismo I, Metodismo II",
       "telefono": "+53 5 3391066"
-    },
-    {
-      "id": 5,
-      "nombre": "Rev. Joel Cariñao Sánchez",
-      "cargo": "Profesor Titular",
-      "asignatura": "Liderazgo Cristiano",
-      "telefono": "+53 5 3154767"
-    },
+    },    
     {
       "id": 6,
-      "nombre": "Rev. Marbelis Pavón Suarez",
+      "nombre": "Elvis Romero Mato",
       "cargo": "Profesor Titular",
       "asignatura": "Introduccion a la Biblia",
       "telefono": "+53 53055796"
     },
     {
       "id": 7,
-      "nombre": "Pastor Alexander Menéndez Arencibia",
+      "nombre": "Orisell Barrera Rodríguez",
       "cargo": "Profesor Titular",
       "asignatura": "La Música en la Tradición Cristiana",
       "telefono": "+53 5 6679765"
@@ -79,7 +72,7 @@
     },
     {
       "id": 12,
-      "nombre": "Rev. Rolando Antonio Delgado Pupo",
+      "nombre": "Yosmani Álvarez Alba",
       "cargo": "Profesor Titular",
       "asignatura": "Historia de la Iglesia I",
       "telefono": "+53 5 3029796"
