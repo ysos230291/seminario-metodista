@@ -27,20 +27,27 @@
       "cargo": "Profesor Titular",
       "asignatura": "Metodismo I, Metodismo II",
       "telefono": "+53 5 3391066"
-    },    
+    },  
+    {
+      "id": 5,
+      "nombre": "Niurka Cabrera Rodríguez",
+      "cargo": "Profesor Titular",
+      "asignatura": "Educación Cristiana",
+      "telefono": "+53 5 4439845"
+    },
     {
       "id": 6,
       "nombre": "Elvis Romero Mato",
       "cargo": "Profesor Titular",
       "asignatura": "Introduccion a la Biblia",
-      "telefono": "+53 53055796"
+      "telefono": "+53 5 3264022"
     },
     {
       "id": 7,
       "nombre": "Orisell Barrera Rodríguez",
       "cargo": "Profesor Titular",
       "asignatura": "La Música en la Tradición Cristiana",
-      "telefono": "+53 5 6679765"
+      "telefono": "+53 5 5996948"
     },
     {
       "id": 8,
@@ -75,7 +82,7 @@
       "nombre": "Yosmani Álvarez Alba",
       "cargo": "Profesor Titular",
       "asignatura": "Historia de la Iglesia I",
-      "telefono": "+53 5 3029796"
+      "telefono": "+53 5 4442905"
     },
     {
       "id": 13,
